@@ -12,7 +12,7 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin('html').tap(args => {
-      args[0].title = '网站名称'
+      args[0].title = 'Echarts-Demo'
       return args
     })
     config.resolve.alias.set("@", resolve("src"));
